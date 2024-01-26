@@ -1,8 +1,10 @@
-provider "local" {}
+locals {
+  path = "${path.root}/result"
+}
 
 resource "local_file" "example" {
   count    = 3
-  filename = "file${count.index + 1}.txt"
+  filename = "${local.path}/file${count.index + 1}.txt"
   content  = "Archivo de ejemplo ${count.index + 1}"
 }
 
