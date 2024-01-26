@@ -1,5 +1,7 @@
 # Formación Terraform
 
+Comandos a lanzar.s
+
 ## local-file
 
 terraform init
