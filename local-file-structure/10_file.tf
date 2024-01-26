@@ -1,16 +1,16 @@
 resource "local_file" "file1" {
   content = "Contenido del archivo 1"
-  filename = "${local.path}/file1"
+  filename = "${local.path}/file1-${var.test}"
 }
 
 resource "local_file" "file2" {
   content = "Contenido del archivo 2"
-  filename = "${local.path}/file2"
+  filename = "${local.path}/file2-${var.test}"
 }
 
 resource "local_file" "file3" {
   content = "Contenido del archivo 3"
-  filename = "${local.path}/file3"
+  filename = "${local.path}/file3-${var.test}"
 }
 
 resource "local_file" "renamed_file1" {

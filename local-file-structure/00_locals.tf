@@ -1,3 +1,4 @@
 locals {
-  path = "/path/to/files"
+  path = "${path.root}"
+  str_test = format("s%-s%",var.tags["environmemt"],var.tags["project"])
 }
